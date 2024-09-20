@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FOX RECARGAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #e67e22; /* Laranja */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .product {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      .product img {
+        max-width: 100%;
+        height: auto;
+      }
+      .product h2 {
+        color: #333;
+      }
+      .product-content {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .product-content img {
+        max-width: 150px; /* Ajuste este valor conforme necessário */
+        margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+      }
+
+      .product-content p {
+        flex: 1;
+      }
+      .packages {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .package {
+        flex: 1;
+        min-width: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .package button {
+        background-color: #25d366; /* Verde do WhatsApp */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .package button:hover {
+        background-color: #1ebe57; /* Tom mais escuro no hover */
+      }
+
+      .package button img {
+        margin-right: 10px;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: #888; /* Cor cinza para indicar que é o preço antigo */
+        margin-right: 10px;
+      }
+
+      .new-price {
+        color: #2ecc71; /* Verde para destacar o preço novo */
+        font-weight: bold;
+      }
+      footer {
+        background-color: #e67e22; /* Laranja */
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      @media (max-width: 600px) {
+        .packages {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header> <img src="/MEDIA/IMAGENS/fox.png" alt="Fox" />
+      
+      <h1>Fox Recargas</h1>
+    </header>
+
+    <div class="product">
+      <h2>UniTV</h2>
+      <div class="product-content">
+        <img src="/MEDIA/IMAGENS/UniTV.jpeg" alt="UniTV" />
+        <p>
+          Unitv é um aplicativo de TV popular no Brasil, com transmissão ao vivo
+          de canais nacionais, VOD de diversas categorias, e recomendações
+          personalizadas de vídeos. Oferece filmes, séries, programas de
+          variedades e muito mais, com reprodução em 4K. Compatível com Android,
+          TV Box, Smart TVs, TV sticks e PCs (via emulador), e disponível para
+          teste gratuito.
+        </p>
+      </div>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ XX,XX</p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Mensal+do+UniTV'"
+          >
+            <img
+              src="/MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+
+            Comprar via WhatsApp
+          </button>
+        </div>
+        <div class="package">
+          <h3>Plano Trimestral</h3>
+          <p>
+            Preço: <span class="old-price">R$ 99,90</span>
+            <span class="new-price">R$ 79,90</span>
+          </p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Trimestral+do+Produto+1'"
+          > <img
+          src="/MEDIA/IMAGENS/whatsapp-icon.png"
+          alt="WhatsApp"
+          style="width: 30px; vertical-align: middle; margin-right: 0 px"
+        />
+            Comprar via WhatsApp
+          </button>
+        </div>
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>
+            Preço: <span class="old-price">R$ 99,90</span>
+            <span class="new-price">R$ 79,90</span>
+          </p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Anual+do+Produto+1'"
+          > <img
+          src="/MEDIA/IMAGENS/whatsapp-icon.png"
+          alt="WhatsApp"
+          style="width: 30px; vertical-align: middle; margin-right: 0 px"
+        />
+            Comprar via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>DunaTV</h2>
+      <img src="produto2.jpg" alt="Produto 2" />
+      <p>Descrição breve do Produto 2.</p>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ XX,XX</p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Mensal+do+Produto+2'"
+          >
+            <img
+              src="/MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
+        </div>
+
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>Preço: R$ XX,XX</p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Anual+do+Produto+2'"
+          >
+            <img
+              src="/MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>EPPI Cinema</h2>
+      <img src="produto3.jpg" alt="Produto 3" />
+      <p>Descrição breve do Produto 3.</p>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ XX,XX</p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Mensal+do+Produto+3'"
+          >
+            Comprar via WhatsApp
+          </button>
+        </div>
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>Preço: R$ XX,XX</p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Anual+do+Produto+3'"
+          >
+            Comprar via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>TVExpress</h2>
+      <img src="produto4.jpg" alt="Produto 4" />
+      <p>Descrição breve do Produto 4.</p>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <div>Preço: R$ XX,XX</div>
+          <div>R$XX,XX</div>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Mensal+do+Produto+4'"
+          >
+            Comprar via WhatsApp
+          </button>
+        </div>
+      
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>Preço: R$ XX,XX</p>
+          <button
+            onclick="window.location.href='https://wa.me/+556492396887?text=Quero+o+Plano+Anual+do+Produto+4'"
+          >
+            Comprar via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 FOX RECARGAS</p>
+    </footer>
+  </body>
+</html>
