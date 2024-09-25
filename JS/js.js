@@ -1,51 +1,52 @@
-// Seleciona os elementos
-const openPopupBtn = document.getElementById('openPopupBtn');
-const closePopupBtn = document.getElementById('closePopupBtn');
-const popup = document.getElementById('popup');
+let productRequestMessage = ""; // Armazena a mensagem fixa que será enviada para o WhatsApp
 
-// Abre o popup ao clicar no botão "Abrir Popup"
-openPopupBtn.addEventListener('click', () => {
-    popup.style.display = 'flex'; // Exibe o popup
-});
+// Função para abrir o pop-up principal ou outros pop-ups
+function openPopup(popupId = "popup", message = "") {
+  // Fecha qualquer pop-up aberto
+  closePopup();
 
-// Fecha o popup ao clicar no "X"
-closePopupBtn.addEventListener('click', () => {
-    popup.style.display = 'none'; // Oculta o popup
-});
+  // Se uma mensagem for passada, armazene-a e exiba no pop-up
+  if (message) {
+    productRequestMessage = message;
+    document.getElementById("product-request-message").innerText =
+      productRequestMessage;
+  }
 
-// Fecha o popup ao clicar fora da área de conteúdo
-window.addEventListener('click', (event) => {
-    if (event.target === popup) {
-        popup.style.display = 'none'; // Oculta o popup
-    }
-});
-
-// Função para abrir o popup e alterar a mensagem
-function abrirPopup(mensagem) {
-    var popup = document.getElementById("popup");
-    var mensagemPopup = document.getElementById("mensagemPopup");
-    mensagemPopup.innerText = mensagem;  // Altera o texto do popup
-    popup.classList.add("show");  // Mostra o popup
+  // Abre o pop-up com o ID fornecido
+  document.getElementById(popupId).style.display = "block";
+  document.getElementById("popup-overlay").style.display = "block";
 }
 
-// Função para fechar o popup
-document.getElementById("closePopupBtn").addEventListener("click", function () {
-    document.getElementById("popup").classList.remove("show");  // Esconde o popup
-});
+// Função para fechar todos os pop-ups
+function closePopup() {
+  const popups = document.getElementsByClassName("popup");
+  for (let popup of popups) {
+    popup.style.display = "none";
+  }
+  document.getElementById("popup-overlay").style.display = "none";
+}
 
-// Redireciona para o WhatsApp ao confirmar a compra
-document.getElementById("confirmarCompra").addEventListener("click", function () {
-    window.location.href = "https://wa.me/+5564993128160?text=Estou+interessado+no+plano";  // Redireciona ao WhatsApp
-});
+function closePopupTermo() {
+  const popups = document.getElementsByClassName("popup_termo");
+  for (let popup of popups) {
+    popup.style.display = "none";
+  }
+  document.getElementById("popup-overlay").style.display = "none";
+}
 
-// Adiciona o evento de clique aos botões de compra
-document.getElementById("comprarMensalUniTV").addEventListener("click", function () {
-    abrirPopup("Você escolheu o Plano Mensal do UniTV por R$ 25,00. Deseja confirmar?");
-});
+function closePopupPolitica() {
+  const popups = document.getElementsByClassName("popup_politica");
+  for (let popup of popups) {
+    popup.style.display = "none";
+  }
+  document.getElementById("popup-overlay").style.display = "none";
+}
 
-// Aqui, você adiciona os eventos para os outros produtos
-document.getElementById("comprarAnualUniTV").addEventListener("click", function () {
-    abrirPopup("Você escolheu o Plano Anual do UniTV por R$ 170,00. Deseja confirmar?");
-});
+// Função para redirecionar para o WhatsApp com a mensagem fixa
+function redirectToWhatsApp() {
+  const phoneNumber = "seunumerodetelefone"; // Substitua pelo número real no formato internacional
+  const encodedMessage = encodeURIComponent(productRequestMessage); // Codifica a mensagem para a URL
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-// Continue adicionando eventos para outros botões de compra
+  window.location.href = whatsappUrl; // Redireciona para o WhatsApp com a mensagem fixa
+}
