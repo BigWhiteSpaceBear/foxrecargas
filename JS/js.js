@@ -44,7 +44,7 @@ function closePopupPolitica() {
 
 // Função para redirecionar para o WhatsApp com a mensagem fixa
 function redirectToWhatsApp() {
-  const phoneNumber = "seunumerodetelefone"; // Substitua pelo número real no formato internacional
+  const phoneNumber = "5564993128160"; 
   const encodedMessage = encodeURIComponent(productRequestMessage); // Codifica a mensagem para a URL
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
