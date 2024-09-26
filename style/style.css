@@ -44,7 +44,7 @@ header {
 .product {
   padding: 20px;
   border-bottom: 1px solid #ddd;
-  background-color: rgba(240, 240, 240, 0.8)
+  background-color: rgba(240, 240, 240, 0.8);
   box-sizing: border-box;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -234,4 +234,5 @@ button {
   color: blue;
   cursor: pointer;
   text-decoration: underline;
+  
 }
