@@ -9,15 +9,15 @@
 </head>
 
 <body>
-<header>
-    <img class="project-image" src="MEDIA/IMAGENS/fox.png" alt="Fox">
-    <h1 class="main-title">Fox Recargas TV</h1>
-    <p class="descricao">
-        Na <strong>Fox Recargas TV</strong>, oferecemos uma solução rápida e segura para você adquirir 
-        <strong>gift cards</strong> dos principais aplicativos de TV. Confie na Fox para manter seus 
-        momentos de entretenimento sempre conectados.
-    </p>
-</header>
+    <header>
+        <img class="project-image" src="MEDIA/IMAGENS/fox.png" alt="Fox">
+        <h1 class="main-title">Fox Recargas TV</h1>
+        <p class="descricao">
+            Na <strong>Fox Recargas TV</strong>, oferecemos uma solução rápida e segura para você adquirir
+            <strong>gift cards</strong> dos principais aplicativos de TV. Confie na Fox para manter seus
+            momentos de entretenimento sempre conectados.
+        </p>
+    </header>
 
     <div class="product">
         <h2>UniTV</h2>
@@ -36,8 +36,7 @@
             <div class="package">
                 <h3>Plano Mensal</h3>
                 <p>Preço: R$ 25,00</p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto UniTV no plano Mensal')">
+                <button onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
 
@@ -50,8 +49,7 @@
                     Preço: <span class="old-price">R$ 300,00</span>
                     <span class="new-price">R$ 170,00</span>
                 </p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto UniTV no plano Anual')">
+                <button onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
                     Comprar via WhatsApp
@@ -70,8 +68,7 @@
             <div class="package">
                 <h3>Plano Mensal</h3>
                 <p>Preço: R$ 25,00</p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto DunaTV no plano Mensal')">
+                <button onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
                     Comprar via WhatsApp
@@ -83,8 +80,7 @@
                     Preço: <span class="old-price">R$ 300,00</span>
                     <span class="new-price">R$ 170,00</span>
                 </p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto DunaTV no plano Anual')">
+                <button onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
                     Comprar via WhatsApp
@@ -103,8 +99,7 @@
             <div class="package">
                 <h3>Plano Mensal</h3>
                 <p>Preço: R$ 17,00</p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto EPPI Cinema no plano Mensal')">
+                <button onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
                     Comprar via WhatsApp
@@ -116,8 +111,7 @@
                     Preço: <span class="old-price">R$ 170,00</span>
                     <span class="new-price">R$ 150,00</span>
                 </p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto EPPI Cinema no plano Anual')">
+                <button onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
                     Comprar via WhatsApp
@@ -136,11 +130,10 @@
             <div class="package">
                 <h3>Plano Mensal</h3>
                 <p>Preço: R$ 25,00</p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto TVExpress no plano Mensal')">
+                <button onclick="openPopup()">
                     <img src=" MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                    style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                Comprar via WhatsApp
+                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
+                    Comprar via WhatsApp
                 </button>
             </div>
             <div class="package">
@@ -149,8 +142,7 @@
                     Preço: <span class="old-price">R$ 300,00</span>
                     <span class="new-price">R$ 155,00</span>
                 </p>
-                <button
-                    onclick="openPopup('popup', 'Estou interessado no Produto TVExpress no plano Anual')">
+                <button  onclick="openPopup()">
                     <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
                         style="width: 30px; vertical-align: middle; margin-right: 0 px" />
                     Comprar via WhatsApp
@@ -186,13 +178,19 @@
 
     <!-- Pop-up principal -->
     <div class="popup" id="popup">
-        <h2>Bem-vindo ao Pop-up</h2>
+
+        <!-- Removendo strings do pop-up
+            <h2>Bem-vindo ao Pop-up</h2>
+            -->
         <p class="popup-message">
             Ao continuar, você concorda com os <a onclick="openPopup('popup_termo')">Termos de Uso</a> e a <a
                 onclick="openPopup('popup_politica')">Política de Privacidade</a>.
         </p>
+
         <br>
-        <p>Você está solicitando:</p>
+        <!--
+            <p>Você está solicitando:</p>
+        -->
         <p id="product-request-message"></p>
         <br><br>
         <button class="whatsapp-btn" onclick="redirectToWhatsApp()">Ir para WhatsApp</button>
