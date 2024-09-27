@@ -1,252 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>FOX RECARGAS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="project-image" src="MEDIA/IMAGENS/fox.png" alt="Fox">
-        <h1 class="main-title">Fox Recargas TV</h1>
-        <p class="descricao">
-            Na <strong>Fox Recargas TV</strong>, oferecemos uma solução rápida e segura para você adquirir
-            <strong>gift cards</strong> dos principais aplicativos de TV. Confie na Fox para manter seus
-            momentos de entretenimento sempre conectados.
-        </p>
+      <img class="project-image" src="MEDIA/IMAGENS/fox.png" alt="Fox" />
+      <h1 class="main-title">Fox Recargas TV</h1>
+      <p class="descricao">
+        Na <strong>Fox Recargas TV</strong>, oferecemos uma solução rápida e
+        segura para você adquirir <strong>gift cards</strong> dos principais
+        aplicativos de TV. Confie na Fox para manter seus momentos de
+        entretenimento sempre conectados.
+      </p>
     </header>
 
     <div class="product">
-        <h2>UniTV</h2>
-        <div class="product-content">
-            <img src="MEDIA/IMAGENS/UniTV.jpeg" alt="UniTV" />
-            <p>
-                Unitv é um aplicativo de TV popular no Brasil, com transmissão ao vivo
-                de canais nacionais, VOD de diversas categorias, e recomendações
-                personalizadas de vídeos. Oferece filmes, séries, programas de
-                variedades e muito mais, com reprodução em 4K. Compatível com Android,
-                TV Box, Smart TVs, TV sticks e PCs (via emulador), e disponível para
-                teste gratuito.
-            </p>
-        </div>
-        <div class="packages">
-            <div class="package">
-                <h3>Plano Mensal</h3>
-                <p>Preço: R$ 25,00</p>
-                <button onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
+      <h2>UniTV</h2>
+      <div class="product-content">
+        <img src="MEDIA/IMAGENS/UniTV.jpeg" alt="UniTV" />
+        <p>
+          Unitv é um aplicativo de TV popular no Brasil, com transmissão ao vivo
+          de canais nacionais, VOD de diversas categorias, e recomendações
+          personalizadas de vídeos. Oferece filmes, séries, programas de
+          variedades e muito mais, com reprodução em 4K. Compatível com Android,
+          TV Box, Smart TVs, TV sticks e PCs (via emulador), e disponível para
+          teste gratuito.
+        </p>
+      </div>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ 25,00</p>
+          <button onclick="openPopup('popup', 'UniTV', 'mensal')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
 
-                    Comprar via WhatsApp
-                </button>
-            </div>
-            <div class="package">
-                <h3>Plano Anual</h3>
-                <p>
-                    Preço: <span class="old-price">R$ 300,00</span>
-                    <span class="new-price">R$ 170,00</span>
-                </p>
-                <button onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
+            Comprar via WhatsApp
+          </button>
         </div>
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>
+            Preço: <span class="old-price">R$ 300,00</span>
+            <span class="new-price">R$ 170,00</span>
+          </p>
+          <button onclick="openPopup('popup', 'UniTV','anual')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="product">
-        <h2>DunaTV</h2>
-        <div class="product-content">
-            <img src="MEDIA/IMAGENS/DunaTV.png" alt="Produto 2" />
-            <p>Descrição breve do Produto 2.</p>
+      <h2>DunaTV</h2>
+      <div class="product-content">
+        <img src="MEDIA/IMAGENS/DunaTV.png" alt="DunaTV" />
+        <p>Descrição breve do Produto 2.</p>
+      </div>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ 25,00</p>
+          <button onclick="openPopup('popup', 'DunaTV','mensal')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
         </div>
-        <div class="packages">
-            <div class="package">
-                <h3>Plano Mensal</h3>
-                <p>Preço: R$ 25,00</p>
-                <button onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
-            <div class="package">
-                <h3>Plano Anual</h3>
-                <p>
-                    Preço: <span class="old-price">R$ 300,00</span>
-                    <span class="new-price">R$ 170,00</span>
-                </p>
-                <button onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>
+            Preço: <span class="old-price">R$ 300,00</span>
+            <span class="new-price">R$ 170,00</span>
+          </p>
+          <button onclick="openPopup('popup', 'DunaTV', 'anual')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
         </div>
+      </div>
     </div>
 
     <div class="product">
-        <h2>EPPI Cinema</h2>
-        <div class="product-content">
-            <img src="MEDIA/IMAGENS/eppi cinema.jpeg" alt="Produto 3" />
-            <p>Descrição breve do Produto 3.</p>
+      <h2>EPPI Cinema</h2>
+      <div class="product-content">
+        <img src="MEDIA/IMAGENS/eppi cinema.jpeg" alt="EPPI Cinema" />
+        <p>Descrição breve do Produto 3.</p>
+      </div>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ 17,00</p>
+          <button onclick="openPopup('popup', 'EPPI Cinema', 'mensal')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
         </div>
-        <div class="packages">
-            <div class="package">
-                <h3>Plano Mensal</h3>
-                <p>Preço: R$ 17,00</p>
-                <button onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
-            <div class="package">
-                <h3>Plano Anual</h3>
-                <p>
-                    Preço: <span class="old-price">R$ 170,00</span>
-                    <span class="new-price">R$ 150,00</span>
-                </p>
-                <button onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>
+            Preço: <span class="old-price">R$ 170,00</span>
+            <span class="new-price">R$ 150,00</span>
+          </p>
+          <button onclick="openPopup('popup', 'EPPI Cinema','anual')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
         </div>
+      </div>
     </div>
 
     <div class="product">
-        <h2>TVExpress</h2>
-        <div class="product-content">
-            <img src="MEDIA/IMAGENS/TVExpress.jpeg" alt="Produto 4" />
-            <p>Descrição breve do Produto 4.</p>
+      <h2>TVExpress</h2>
+      <div class="product-content">
+        <img src="MEDIA/IMAGENS/TVExpress.jpeg" alt="Produto 4" />
+        <p>Descrição breve do Produto 4.</p>
+      </div>
+      <div class="packages">
+        <div class="package">
+          <h3>Plano Mensal</h3>
+          <p>Preço: R$ 25,00</p>
+          <button onclick="openPopup('popup', 'TVExpress', 'mensal')">
+            <img
+              src=" MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
         </div>
-        <div class="packages">
-            <div class="package">
-                <h3>Plano Mensal</h3>
-                <p>Preço: R$ 25,00</p>
-                <button onclick="openPopup()">
-                    <img src=" MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
-            <div class="package">
-                <h3>Plano Anual</h3>
-                <p>
-                    Preço: <span class="old-price">R$ 300,00</span>
-                    <span class="new-price">R$ 155,00</span>
-                </p>
-                <button  onclick="openPopup()">
-                    <img src="MEDIA/IMAGENS/whatsapp-icon.png" alt="WhatsApp"
-                        style="width: 30px; vertical-align: middle; margin-right: 0 px" />
-                    Comprar via WhatsApp
-                </button>
-            </div>
+        <div class="package">
+          <h3>Plano Anual</h3>
+          <p>
+            Preço: <span class="old-price">R$ 300,00</span>
+            <span class="new-price">R$ 155,00</span>
+          </p>
+          <button onclick="openPopup('popup', 'TVExpress', 'anual')">
+            <img
+              src="MEDIA/IMAGENS/whatsapp-icon.png"
+              alt="WhatsApp"
+              style="width: 30px; vertical-align: middle; margin-right: 0 px"
+            />
+            Comprar via WhatsApp
+          </button>
         </div>
+      </div>
     </div>
 
     <div class="text-information">
-        <p>A FOX RECARGAS atua como um revendedor autorizado de GIFT CARDS para diversos segmentos. É importante
-            esclarecer que nossa responsabilidade se limita à venda dos cartões. Não temos controle sobre o conteúdo
-            disponível nos aplicativos, nem gerenciamos sua disponibilidade ou desempenho, como lentidão ou falta de
-            programas de TV.
-
-            Os usuários são responsáveis por gerenciar seus próprios GIFT CARDS, incluindo baixar, instalar, alterar e
-            adicionar conteúdo conforme desejarem, de acordo com os termos de aceitação. Por isso, a FOX RECARGAS não se
-            responsabiliza por perdas ou problemas relacionados ao uso ou à perda do seu GIFT CARD.</p>
-
+      <p>
+        A FOX RECARGAS atua como um revendedor autorizado de GIFT CARDS para
+        diversos segmentos. É importante esclarecer que nossa responsabilidade
+        se limita à venda dos cartões. Não temos controle sobre o conteúdo
+        disponível nos aplicativos, nem gerenciamos sua disponibilidade ou
+        desempenho, como lentidão ou falta de programas de TV. Os usuários são
+        responsáveis por gerenciar seus próprios GIFT CARDS, incluindo baixar,
+        instalar, alterar e adicionar conteúdo conforme desejarem, de acordo com
+        os termos de aceitação. Por isso, a FOX RECARGAS não se responsabiliza
+        por perdas ou problemas relacionados ao uso ou à perda do seu GIFT CARD.
+      </p>
     </div>
 
-    <!-- Botao teste 
-        <div class="button-container">
-    
-            <button class="open-popup-btn" onclick="openPopup('popup', 'Quero o produto 1 no plano mensal.')">Abrir Pop-up
-                (Produto 1, Plano Mensal)</button>
-            <button class="open-popup-btn" onclick="openPopup('popup', 'Quero o produto 1 no plano anual.')">Abrir Pop-up
-                (Produto 1, Plano Anual)</button>
-        </div>
-    -->
+    <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
+    <div class="popup" id="popup" role="dialog" aria-modal="true">
+      <button
+        class="close-btn"
+        onclick="closePopup()"
+        aria-label="Fechar janela"
+      >
+        &times;
+      </button>
+      <br /><br />
+      <p class="popup-message">
+        Ao continuar, você concorda com os
+        <a onclick="openPopup('popup_termo')">Termos de Uso</a> e a
+        <a onclick="openPopup('popup_politica')">Política de Privacidade</a>.
+      </p>
 
-    <!-- Fundo do pop-up -->
-    <div class="popup-overlay" id="popup-overlay"></div>
-
-    <!-- Pop-up principal -->
-    <div class="popup" id="popup">
-
-        <!-- Removendo strings do pop-up
-            <h2>Bem-vindo ao Pop-up</h2>
-            -->
-        <p class="popup-message">
-            Ao continuar, você concorda com os <a onclick="openPopup('popup_termo')">Termos de Uso</a> e a <a
-                onclick="openPopup('popup_politica')">Política de Privacidade</a>.
-        </p>
-
-        <br>
-        <!--
-            <p>Você está solicitando:</p>
-        -->
-        <p id="product-request-message"></p>
-        <br><br>
-        <button class="whatsapp-btn" onclick="redirectToWhatsApp()">Ir para WhatsApp</button>
-        <br><br>
-        <button class="close-btn" onclick="closePopup()">Fechar</button>
+      <button
+        class="whatsapp-btn"
+        onclick="redirectToWhatsApp()"
+        aria-label="Abrir conversa no WhatsApp"
+      >
+        Ir para WhatsApp
+      </button>
     </div>
 
     <div id="popup_termo" class="popup_termo">
-        <div class="popup-content">
-            <button class="close-btn" onclick="closePopupTermo()">Fechar</button>
-            <h2>Termos de Uso</h2>
-            <p>1. Introdução Bem-vindo à FOX RECARGAS. Ao utilizar nossos serviços e adquirir nossos GIFT CARDS, você
-                concorda com os seguintes termos e condições.
-            </p>
-            <p>2. Serviços Oferecidos A FOX RECARGAS é uma revendedora autorizada de GIFT CARDS de diversos segmentos,
-                responsável exclusivamente pela comercialização dos cartões. Não nos responsabilizamos pelo conteúdo,
-                disponibilidade ou desempenho dos aplicativos.
-            </p>
-            <p>3.Responsabilidades do Usuário Ao comprar um GIFT CARD, o usuário se compromete a utilizar os serviços
-                conforme especificado pelos respectivos aplicativos, incluindo a responsabilidade de instalar e
-                gerenciar o conteúdo.</p>
-            <p>4.Isenção de Responsabilidade Não nos responsabilizamos por perdas ou danos decorrentes do uso inadequado
-                dos GIFT CARDS adquiridos.</p>
-            <p>5.Modificações nos Termos Reservamo-nos o direito de modificar estes termos a qualquer momento, sendo que
-                as alterações entrarão em vigor imediatamente após sua publicação no nosso site.</p>
-        </div>
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopupTermo()">&times;</button>
+        <h2>Termos de Uso</h2>
+        <p>
+            <b>1. Introdução:</b> Bem-vindo à FOX RECARGAS. Ao utilizar nossos serviços e
+          adquirir nossos GIFT CARDS, você concorda com os seguintes termos e
+          condições.
+        </p>
+        <p>
+            <b> 2. Serviços Oferecidos:</b> A FOX RECARGAS é uma revendedora autorizada de
+          GIFT CARDS de diversos segmentos, responsável exclusivamente pela
+          comercialização dos cartões. Não nos responsabilizamos pelo conteúdo,
+          disponibilidade ou desempenho dos aplicativos.
+        </p>
+        <p>
+            <b>3.Responsabilidades do Usuário:</b> Ao comprar um GIFT CARD, o usuário se
+          compromete a utilizar os serviços conforme especificado pelos
+          respectivos aplicativos, incluindo a responsabilidade de instalar e
+          gerenciar o conteúdo.
+        </p>
+        <p>
+            <b>4.Isenção de Responsabilidade:</b> Não nos responsabilizamos por perdas ou
+          danos decorrentes do uso inadequado dos GIFT CARDS adquiridos.
+        </p>
+        <p>
+            <b>5.Modificações nos Termos:</b> Reservamo-nos o direito de modificar estes
+          termos a qualquer momento, sendo que as alterações entrarão em vigor
+          imediatamente após sua publicação no nosso site.
+        </p>
+      </div>
     </div>
     <div id="popup_politica" class="popup_politica">
-        <div class="popup-content">
-            <button class="close-btn" onclick="closePopupPolitica()">Fechar</button>
-            <h2>Política de Privacidade</h2>
-            <p>1.Coleta de Informações Coletamos informações necessárias apenas para a venda dos GIFT CARDS, como nome,
-                endereço de e-mail e detalhes de pagamento.</p>
-            <p>2. Uso das Informações As informações coletadas serão utilizadas exclusivamente para processar as
-                transações e, com seu consentimento, para enviar comunicações sobre nossos produtos e ofertas.
-            </p>
-            <p>3.Compartilhamento de Informações Não compartilhamos suas informações pessoais com terceiros, exceto
-                quando
-                necessário para a conclusão das transações ou por exigência legal.</p>
-            <p>4. Segurança Empregamos medidas de segurança para proteger suas informações pessoais contra acesso não
-                autorizado e uso ilegal.
-            </p>
-            <p>5.Direitos do Usuário Você tem o direito de acessar, corrigir ou excluir suas informações pessoais a
-                qualquer momento. Para fazer isso, entre em contato conosco através do nosso suporte.</p>
-            <p>6. Consentimento Ao utilizar nossos serviços, você consente com a coleta e uso de suas informações
-                conforme descrito nesta política.</p>
-
-        </div>
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopupPolitica()">
+          &times;
+        </button>
+        <h2>Política de Privacidade</h2>
+        <p>
+          <b> 1.Coleta de Informações:</b> Coletamos informações
+          necessárias apenas para a venda dos GIFT CARDS, como nome, endereço de
+          e-mail e detalhes de pagamento.
+        </p>
+        <p>
+          <b> 2. Uso das Informações:</b> As informações coletadas serão
+          utilizadas exclusivamente para processar as transações e, com seu
+          consentimento, para enviar comunicações sobre nossos produtos e
+          ofertas.
+        </p>
+        <p>
+          <b> 3.Compartilhamento de Informações:</b> Não compartilhamos
+          suas informações pessoais com terceiros, exceto quando necessário para
+          a conclusão das transações ou por exigência legal.
+        </p>
+        <p>
+          <b>4. Segurança:</b> Empregamos medidas de segurança para
+          proteger suas informações pessoais contra acesso não autorizado e uso
+          ilegal.
+        </p>
+        <p>
+          <b>5.Direitos do Usuário:</b> Você tem o direito de acessar,
+          corrigir ou excluir suas informações pessoais a qualquer momento. Para
+          fazer isso, entre em contato conosco através do nosso suporte.
+        </p>
+        <p>
+          <b>6. Consentimento:</b> Ao utilizar nossos serviços, você
+          consente com a coleta e uso de suas informações conforme descrito
+          nesta política.
+        </p>
+      </div>
     </div>
 
     <script src="JS/js.js"></script>
 
-
     <footer>
-        <p>&copy; 2023 FOX RECARGAS</p>
+      <p>&copy; 2023 FOX RECARGAS</p>
     </footer>
-</body>
-
+  </body>
 </html>
